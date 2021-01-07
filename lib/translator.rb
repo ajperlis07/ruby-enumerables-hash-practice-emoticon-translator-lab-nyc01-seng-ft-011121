@@ -1,6 +1,5 @@
 require"pry"
 require"yaml"
-# require modules here
 
 def load_library(file_name)
 emoticons = YAML.load_file(file_name)
@@ -19,7 +18,6 @@ def get_japanese_emoticon(file,symbol)
      end
 end
     "Sorry, that emoticon was not found"
-  # code goes here
 end
 
 def get_english_meaning(file,symbol)
@@ -30,5 +28,4 @@ def get_english_meaning(file,symbol)
      end
    end
    "Sorry, that emoticon was not found"
-  # code goes here
 end
