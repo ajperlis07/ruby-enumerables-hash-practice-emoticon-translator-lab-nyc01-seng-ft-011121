@@ -2,7 +2,7 @@ require"pry"
 require"yaml"
 # require modules here
 
-def load_library
+def load_library(file_name)
 emoticons = YAML.load_file(file_name)
  hash = {} 
  emoticons.each do |key, value|
