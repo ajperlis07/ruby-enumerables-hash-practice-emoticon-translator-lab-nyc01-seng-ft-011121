@@ -28,5 +28,6 @@ def get_english_meaning(file,symbol)
      if value[:japanese] == symbol 
        return key
      end
+   end
   # code goes here
 end
