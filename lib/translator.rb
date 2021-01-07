@@ -22,6 +22,11 @@ end
   # code goes here
 end
 
-def get_english_meaning
+def get_english_meaning(file,symbol)
+  new_hash = load_library(file)
+   new_hash.each do |key, value|
+     if value[:japanese] == symbol 
+       return key
+     end
   # code goes here
 end
