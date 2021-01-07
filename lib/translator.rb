@@ -11,10 +11,10 @@ emoticons = YAML.load_file(file_name)
  new_hash
 end
 
-def get_japanese_emoticon()
+def get_japanese_emoticon(file_name,symbol)
     new_hash = load_library(file_name)
    new_hash.each do |key, value|
-     if value[:english] == emoticon 
+     if value[:english] == symbol 
        return value[:japanese]
      end
 
