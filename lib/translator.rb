@@ -17,8 +17,7 @@ def get_japanese_emoticon(file_name,symbol)
      if value[:english] == symbol 
        return value[:japanese]
      end
-
-   end
+end
     "Sorry, that emoticon was not found"
   # code goes here
 end
